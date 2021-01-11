@@ -16,3 +16,5 @@ const returnIndices = (oddOrEven, array) => {
   return oddOrEven === 'even' ? [array[startIndex - 1], array[startIndex]] : [array[startIndex]];
 };
 
+module.exports = middle;
+
