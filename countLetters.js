@@ -12,3 +12,5 @@ const countLetters = function(sentence) {
  return numberOfOccurences;
 };
 
+module.exports = countLetters;
+

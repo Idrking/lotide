@@ -6,3 +6,5 @@ const without = (source, itemsToRemove) => {
 
   return returnedArray;
 };
+
+module.exports = without;

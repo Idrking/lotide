@@ -6,3 +6,5 @@ const map = (array, callback) => {
   }
   return results;
 };
+
+module.exports = map;
