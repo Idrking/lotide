@@ -1,8 +1,8 @@
 {
-  "name": "lotide",
+  "name": "@idrking/lotide",
   "version": "1.0.0",
   "description": "Student projest for Lighthouse Labs Web Dev Bootcamp",
-  "main": "assertArraysEqual.js",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
