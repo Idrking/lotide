@@ -26,4 +26,4 @@ const compareLength = (firstArray, secondArray) => {
   return firstArray.length === secondArray.length;
 };
 
-
+module.exports = eqArrays;
