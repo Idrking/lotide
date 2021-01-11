@@ -1,10 +1,42 @@
 const middle = require('../middle');
-const assert = require('../assertArraysEqual');
+const assert = require('chai').assert;
 
 
-assert(middle([1]), []); // => []
-assert(middle([1, 2]), []); // => []
-assert(middle([1, 2, 3]), [2]); // => [2]
-assert(middle([1, 2, 3, 4, 5]), [3]); // => [3]
-assert(middle([1, 2, 3, 4]), [2, 3]); // => [2, 3]
-assert(middle([1, 2, 3, 4, 5, 6]), [3, 4]); // => [3, 4]
+describe('#middle', () => {
+  
+  it("should return an empty array when passed [1]", () => {
+    const actual = middle([1]);
+    const expected = [];
+    assert.deepEqual(actual, expected);
+  });
+  
+  it("should return an empty array when passed [1, 2]", () => {
+    const actual = middle([1, 2]);
+    const expected = [];
+    assert.deepEqual(actual, expected);
+  });
+  
+  it("should return [2] when passed [1, 2, 3]", () => {
+    const actual = middle([1, 2, 3]);
+    const expected = [2];
+    assert.deepEqual(actual, expected);
+  });
+
+  it("should return [3] when passed [1, 2, 3, 4, 5]", () => {
+    const actual = middle([1, 2, 3, 4, 5]);
+    const expected = [3];
+    assert.deepEqual(actual, expected);
+  });
+  
+  it("should return [2, 3] when passed [1, 2, 3, 4]", () => {
+    const actual = middle([1, 2, 3, 4]);
+    const expected = [2, 3];
+    assert.deepEqual(actual, expected);
+  });
+
+  it("should return [3, 4] when passed [1, 2, 3, 4, 5, 6]", () => {
+    const actual = middle([1, 2, 3, 4, 5, 6]);
+    const expected = [3, 4];
+    assert.deepEqual(actual, expected);
+  });
+});
