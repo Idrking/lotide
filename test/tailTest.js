@@ -1,16 +1,5 @@
 const tail = require('../tail');
 const assert = require('chai').assert;
-
-// const result = tail(["Hello", "Lighthouse", "Labs"]);
-// assertEqual(result.length, 2);
-// assertEqual(result[0], "Lighthouse");
-// assertEqual(result[1], "Labs");
-
-// // Test Case: Check the original array 
-// const words = ["Yo Yo", "Lighthouse", "Labs"];
-// tail(words);
-// assertEqual(words.length, 3); // original array should still have 3 elements!
-
 describe("#tail", () => {
 
   it("should return ['Lighthouse', 'Labs'] when passed ['Hello', 'Lighthouse', 'Labs]", () => {

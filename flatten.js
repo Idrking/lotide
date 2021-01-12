@@ -1,4 +1,5 @@
-const flatten = (arrayToFlatten) => {
+const flatten = (array) => {
+  let arrayToFlatten = [...array];
   for (let i = 0; i < arrayToFlatten.length; i++) {
     if (Array.isArray(arrayToFlatten[i])) {
       let tempArray = arrayToFlatten[i];
